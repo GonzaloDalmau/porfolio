@@ -12,7 +12,6 @@
 </head>
     <body>
         <header>
-           
             <h1>Gonzalo Dalmau</h1>
             <p>Second-year Computer Science student at Brock University, building full-stack web apps. With extreme enthusiasm for learning and problem-solving.</p>
             <nav>
@@ -23,28 +22,46 @@
             </nav>
         </header>
 
-    <section id ="about">
+    <section id="about">
         <h2>About Me</h2>
         <p>I'm a second-year Computer Science student at Brock University, originally from the Dominican Republic. Outside of the classroom, I'm a serious powerlifter — currently training in the 120kg weight class and cutting toward 105kg. I built my first full-stack web app to track my own training, and I'm looking to keep building projects like it.</p>
     </section>
+
     <section id="projects">
         <h2>My Projects</h2>
         <article>
             <h3>Powerlifting Tracker</h3>
-        <p>A full-stack web app for logging training sessions and tracking progress toward a target weight class.
-            Built with vanilla JavaScript on the frontend, a Node/Express backend, and a PostgreSQL database — with user accounts, 
-            JWT authentication, and live 1RM estimates for lifts without a logged max. Deployed on Netlify (frontend) and Railway (backend + database).</p>
-            <a href="#">Live Site</a>
-            <a href="#">GitHub</a>
+            <p>As a competitive powerlifter, I had no simple way to track powerlifting sessions, sets, reps, and effort levels, so I built a web app solo, using AI as a learning aid to work through unfamiliar concepts for my first full-stack project. The app enables users to easily record training sessions and blocks while tracking progress toward their strength goals over time. A key technical challenge was implementing an authentication system (JWT + user-scoped data) to ensure sessions, sets, and weigh-ins stay correctly tied to the right user. Today, the app is live, fully deployed, and actively used for my own personal training.</p>
+            <a href="https://powerlifttracker.netlify.app/" target="_blank">Live Site</a>
+            <a href="https://github.com/GonzaloDalmau/powerlifting-tracker" target="_blank">GitHub</a>
         </article>
     </section>
-        <section id="skills">
-            <h2>My Skills</h2>
-            <p>I have experience in HTML, CSS, and JavaScript.</p>
-        </section>
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p>You can reach me at <a href="mailto:gonzalo.a.dalmau@outlook.com">gonzalo.a.dalmau@outlook.com</a></p>
-        </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills-grid">
+            <div>
+                <h3>Languages</h3>
+                <p>JavaScript, Java, SQL, HTML, CSS</p>
+            </div>
+            <div>
+                <h3>Backend</h3>
+                <p>Node.js, Express.js, REST APIs, JWT Authentication</p>
+            </div>
+            <div>
+                <h3>Database</h3>
+                <p>PostgreSQL</p>
+            </div>
+            <div>
+                <h3>Tools</h3>
+                <p>Git, GitHub, Netlify, Railway</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>You can reach me at <a href="mailto:gonzalo.a.dalmau@outlook.com">gonzalo.a.dalmau@outlook.com</a></p>
+    </section>
     </body>
 </html>

@@ -14,21 +14,41 @@ h1, h2, h3 {
 header {
     background-color: #2E4057;
     color: #fff;
-    padding: 20px;
-    text-align: left;
+    padding: 32px 24px 80px;
 }
 
 header h1 {
-    color: #fff;
+    font-size: clamp(3rem, 7vw, 5.5rem);
+    line-height: 1;
+    margin: 70px 0 20px;
+    max-width: 900px;
 }
+
 header p {
-    color: #fff;
+    font-size: 1.15rem;
+    line-height: 1.7;
+    max-width: 650px;
+    color: #E5E7EB;
 }
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.skills-grid div {
+    padding: 24px;
+    background: #fff;
+    border: 1px solid #E5E5E5;
+}
+
 section {
     max-width: 700px;
     margin: 0 auto;
     padding: 40px 20px;
 }
+
 nav a {
     color: #fff;
     text-decoration: none;
@@ -39,9 +59,11 @@ nav a {
 nav a:hover {
     text-decoration: underline;
 }
+
 html {
     scroll-behavior: smooth;
 }
+
 article {
     border-left: 3px solid #2E4057;
     padding: 20px;
@@ -58,5 +80,3 @@ article a {
     margin-right: 15px;
     font-weight: bold;
 }
-
-
